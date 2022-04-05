@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {./resources/} }
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
+\usepackage{listings}
+\lstset{language=[Sharp]C,keywordstyle={\bfseries \color{blue}}}
+
+\title{
+{\includegraphics[width=10cm]{logo.png}}
+
+{Unity QA Position Assessment}}
+
+\author{Mathias Wagner Nielsen and Simonas Holcmann}
+
+\begin{document}
+\maketitle
+\section{Purpose}
+This is the specification for the Unity QA Position Assessment.
+The goal of this document is to facilitate a proper assessment of the applicant's ability to contribute to our Unity Development team.
+This document is intended as a suggestion for how to demonstrate your fitness for the project to us.
+
+\section{Factorial Calculator}
+We are building a Factorial Calculator for Mr. Ackermann, who has a very keen eye for detail paired with the highest level of quality standards. Our junior developer looked at the specifications of the application, and bravely exclaimed that he will finish the whole application within a day. As a team we trust in his abilities, however all work produced by our development team must pass the QA layer in order to reach the client.
+
+\section{Task}
+It is up to you to ensure that the application is the in the best shape that it can be. The most important feature here is that the factorial calculator calculates the factorial function accurately! In order to achieve the confidence to ship this application to Mr.Ackermann, we need to back it up with tests find any issues that may reside in the application, report said issues and suggest ways to solve the issues.
+\paragraph{Automated testing:}
+	\begin{enumerate}
+				\item Ensure that the function in Factorial Calculator class returns a correct factorial number, by writing a unit test (Editor mode).
+				\item Ensure that the input field, when given an integer, calculates the factorial and outputs it to the text field below the input field by writing an integration test (Play mode).
+                \item From your experience, what else might go wrong in this application? Think of possible scenarios, and write integration tests that assert the outcomes and possibilities (2 - 3 tests).
+	\end{enumerate}
+    \paragraph{Exploratory testing and documentation:}
+	\begin{enumerate}
+				\item Explore the application. What issues can you find with it? Write a defect report for each issue and inconsistency you manage to find. 
+				 \item Create a document with test cases. Document your findings, expected outcomes and actual outcomes. You can find a good explanation of the 7 column test cases   \href{https://www.freecodecamp.org/news/how-to-write-qa-documentation-that-will-work}{here}.
+	\end{enumerate}
+    \textit{Feel free to use free software tools such as \href{https://trello.com/}{Trello} for documenting defects, test cases and issue reports, however make sure you share them with the Emperia team!}
+    
+\section{Forking}
+When writing your submission, please fork this project, clone your own fork, and commit your code and documentation files to that. This way, you can share the forked repository with us.
+
+\end{document}
